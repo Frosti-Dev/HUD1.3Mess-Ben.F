@@ -1,0 +1,8 @@
+C:\Users\w0527459\Documents\HUD1.3Mess-Ben.F\HUD1.3Mess-Ben.F\bin\Debug\HUD1.3Mess-Ben.F.exe.config
+C:\Users\w0527459\Documents\HUD1.3Mess-Ben.F\HUD1.3Mess-Ben.F\bin\Debug\HUD1.3Mess-Ben.F.exe
+C:\Users\w0527459\Documents\HUD1.3Mess-Ben.F\HUD1.3Mess-Ben.F\bin\Debug\HUD1.3Mess-Ben.F.pdb
+C:\Users\w0527459\Documents\HUD1.3Mess-Ben.F\HUD1.3Mess-Ben.F\obj\Debug\HUD1.3Mess-Ben.F.csproj.AssemblyReference.cache
+C:\Users\w0527459\Documents\HUD1.3Mess-Ben.F\HUD1.3Mess-Ben.F\obj\Debug\HUD1.3Mess-Ben.F.csproj.CoreCompileInputs.cache
+C:\Users\w0527459\Documents\HUD1.3Mess-Ben.F\HUD1.3Mess-Ben.F\obj\Debug\HUD1.3Mess-Ben.F.exe
+C:\Users\w0527459\Documents\HUD1.3Mess-Ben.F\HUD1.3Mess-Ben.F\obj\Debug\HUD1.3Mess-Ben.F.pdb
+C:\Users\w0527459\Documents\HUD1.3Mess-Ben.F\HUD1.3Mess-Ben.F\obj\Debug\HUD1.3Mess-Ben.F.exe.config
