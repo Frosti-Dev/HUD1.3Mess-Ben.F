@@ -11,17 +11,18 @@ namespace HUDv1._2Project_BenF
     {
         //variables
         static int weaponnum = 0;
+        static int damageTaken = 0;
 
         enum weaponType
         {
-            Pistol = 0,
-            Shotgun = 1,
-            Spreader = 2,
-            Laser = 3,
-            Sniper = 4,
+            Fist = 0,
+            BasicSword = 1,
+            Bow = 2,
+            Claymore = 3,
+            Polearm = 4,
         }
 
-        static weaponType weapon = weaponType.Pistol;
+        static weaponType weapon = weaponType.Fist;
 
         static int health = 100;
         static int enemyHealth = 100;
@@ -31,23 +32,23 @@ namespace HUDv1._2Project_BenF
         {
             if (weaponchange == 0)
             {
-                return weaponType.Pistol;
+                return weaponType.Fist;
             }
             else if (weaponchange == 1)
             {
-                return weaponType.Shotgun;
+                return weaponType.BasicSword;
             }
             else if (weaponchange == 2)
             {
-                return weaponType.Spreader;
+                return weaponType.Bow;
             }
             else if (weaponchange == 3)
             {
-                return weaponType.Laser;
+                return weaponType.Claymore;
             }
             else
             {
-                return weaponType.Sniper;
+                return weaponType.Polearm;
             }
 
         }
@@ -160,20 +161,41 @@ namespace HUDv1._2Project_BenF
                 case ConsoleKey.RightArrow:
                     Console.Clear();
                     ChangeWeapon(2);
-                    TakeDamage(35);
+                    enemyTurn();
                     ShowHUD();
-                    Console.WriteLine("You get hit for 35 DMG");
+                    Console.WriteLine($"You get hit for {damageTaken} DMG");
                     Console.WriteLine($"You've switched to {CurWeapon(weaponnum)}");
                     return;
             }
         }
 
+        static void enemyTurn()
+        {
+            Random random = new Random();
+
+            int randomDamage = random.Next(0, 20);
+
+            if (enemyHealth == 0)
+            {
+                Console.WriteLine("You've Killed the Enemy!");
+
+            }
+
+            damageTaken = randomDamage;
+            TakeDamage(damageTaken);
+
+
+        }
+
         static void Main(string[] args)
         {
-            //start (event 1)
-            ShowHUD();
-            Console.WriteLine("A scarrryy enemy appears!");
-            ReadInput();
+            while(health > 0)
+            {
+                ShowHUD();
+                Console.WriteLine("A scarrryy enemy appears!");
+                ReadInput();
+
+            }
 
         }
     }
